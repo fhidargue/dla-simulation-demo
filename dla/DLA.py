@@ -1,7 +1,7 @@
 import random
 import sys
 
-from Image.src.image import Image, rgba
+from image.Image import Image, rgba
 
 
 class DLA:

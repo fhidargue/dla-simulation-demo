@@ -1,6 +1,6 @@
 import pytest
 
-from image import Image, ImageAccessError, rgba
+from image.Image import Image, ImageAccessError, rgba
 
 
 @pytest.fixture

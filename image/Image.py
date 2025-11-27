@@ -20,9 +20,7 @@ class rgba:
         for component in ("r", "g", "b", "a"):
             value = getattr(self, component)
             if not isinstance(value, int) or not (0 <= value <= 255):
-                raise ValueError(
-                    f"RGBA component {component} must be an int from 0 to 255"
-                )
+                raise ValueError(f"RGBA component {component} must be an int from 0 to 255")
 
 
 class ImageAccessError(Exception):
@@ -36,9 +34,7 @@ class Image:
     A class that represents an image.
     """
 
-    def __init__(
-        self, width: int, height: int, fill_color: Union[rgba, tuple, None] = None
-    ) -> None:
+    def __init__(self, width: int, height: int, fill_color: Union[rgba, tuple, None] = None) -> None:
         """
         Initialize the Image.
 
@@ -71,9 +67,7 @@ class Image:
     def height(self, value) -> None:
         raise ImageAccessError("Trying to set read only property height")
 
-    def _validate_rgba(
-        self, value: Union[rgba, tuple, None]
-    ) -> Tuple[int, int, int, int]:
+    def _validate_rgba(self, value: Union[rgba, tuple, None]) -> Tuple[int, int, int, int]:
         """
         Check to see if a value is correct and return a tuple of RGBA values.
 
@@ -110,9 +104,7 @@ class Image:
         """
 
         if not (0 <= x <= self.width and 0 <= y <= self.height):
-            raise IndexError(
-                f"X or Y values out of range {x=} {self.width=} {y=} {self.height=}"
-            )
+            raise IndexError(f"X or Y values out of range {x=} {self.width=} {y=} {self.height=}")
 
     def get_pixel(self, x: int, y: int) -> Tuple[int, int, int, int]:
         """
