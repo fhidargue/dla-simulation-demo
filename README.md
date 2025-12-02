@@ -51,6 +51,7 @@ This section describes each demo function and provides space for example videos.
 ## `SimulationType.DEFAULT`
 
 **Description:**
+
 Places random seeds throughout the simulation grid.
 This creates natural, chaotic DLA growth patterns where branches compete and merge across the entire image.
 
