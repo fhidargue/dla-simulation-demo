@@ -62,7 +62,7 @@ This creates natural, chaotic DLA growth patterns where branches compete and mer
 
 **Example Output:**
 
-![Default Simulation](./simulations/default.mov)
+![Default Simulation](./simulations/default.gif)
 
 ---
 
@@ -79,7 +79,7 @@ This produces symmetric growth patterns as walkers attach from both the top and 
 
 **Example Output:**
 
-![Center Simulation](./simulations/center.mov)
+![Center Simulation](./simulations/center.gif)
 
 ---
 
@@ -96,7 +96,7 @@ Walkers start from random interior positions and attach as they drift upward, pr
 
 **Example Output:**
 
-![Top Simulation](./simulations/top.mov)
+![Top Simulation](./simulations/top.gif)
 
 ---
 
@@ -113,5 +113,5 @@ Walkers attach as they diffuse downward, generating upward-growing fractal forma
 
 **Example Output:**
 
-![Bottom Simulation](./simulations/bottom.mov)
+![Bottom Simulation](./simulations/bottom.gif)
 
